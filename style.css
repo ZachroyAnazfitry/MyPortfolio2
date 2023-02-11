@@ -27,10 +27,11 @@ html{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.3)),
-    url(images/bg.jpeg) center no-repeat;
+    url(images/bg1.jpeg) center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    /* to center flex items */
     justify-content: center;
     align-items: center;
 
@@ -40,11 +41,13 @@ html{
     font-size: 6rem;
     font-weight: 700;
     color: antiquewhite;
-    background-color: green;
+    background-color: black;
     padding: 0 3rem;
     margin-bottom: 5rem;
+    /* transform text to uppercase */
     text-transform: uppercase;
     letter-spacing: 1rem;
+    /* border at bottom of heading */
     border-bottom: .3rem solid white;
     text-shadow: .2rem .2rem 1rem #555;
     transform: skew(-10deg);
@@ -55,6 +58,7 @@ html{
     height: 25rem;
     object-fit: cover;
     border-radius: 50%;
+    /* border, style(dotted), color */
     border: 0.7rem dotted black;
     padding: 0.5rem;
     opacity: 0.9rem;
@@ -82,12 +86,14 @@ html{
 }
 /* end section 1 */
 
+
+
 /* navbar */
 
 .navbar{
     width: 100%;
     height: 4rem;
-    background-color: red;
+    background-color: black;
     box-shadow: .2rem .2rem .5rem;
     position: relative;
 }
@@ -96,12 +102,14 @@ html{
     font-size: 1.7rem;
     font-weight: 600;
     margin: 0 3rem;
+    color: #555;
     letter-spacing: .3rem;
     text-transform: uppercase;
     position: relative;
     transition: color 0.2s;
 }
 
+/* create underscore line */
 .navbar-link::before{
     content: "";
     width: 0;
@@ -113,6 +121,7 @@ html{
     transition: width 0.2rem;
 }
 
+/* create hover effects */
 .navbar-link:hover::before{
     width: 130%;
 }
