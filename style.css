@@ -20,6 +20,18 @@ html{
     justify-content: center;
     align-items: center;
 }
+
+/* common section-heading style */
+.section-heading{
+    font-size: 5rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid green;
+    text-shadow: 0.2rem 0.2rem 5rem grey ;
+
+}
 /* end of common styles */
 
 /* section 1 */
@@ -227,6 +239,7 @@ html{
 .section-3 {
     width: 100%;
     height: 100%;
+    /* create space inside section */
     padding: 10rem 0;
     background-color: azure;
     display: flex;
@@ -235,6 +248,91 @@ html{
     align-items: center;
 }
 
+.project-wrapper{
+    width: 80%;
+    /* place project into the center */
+    /* place side by side */
+    flex-wrap: wrap;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* create space between project */
+    margin: 1rem;
+    background-color: whitesmoke;
+    box-shadow: .3rem .3rem .5rem #777;
+    /* parent */
+    position: relative;
+    /* hide the content by default */
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+/* create shadow effect with hover */
+.project:hover{
+    box-shadow: 1rem 1rem 1rem orange;
+}
+
+.project-text{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    /* child */
+    position: absolute;
+    top: -10rem;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.project:hover .project-text{
+    top: 5rem;
+    /* delay time */
+    transition: top .3s .3s;
+}
+
+.project-name{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.project-technologies{
+    font-size: 1.8rem;
+    color: grey;
+}
+
+.project-img{
+    width: 40rem;
+    transition: opacity .3s;
+}
+
+/* create opacity of the image */
+project:hover .project-img{
+    opacity: .2;
+}
+
+.project-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.1rem;
+    border: .3rem solid orange;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+    /* change position */
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom .3s;
+}
+
+.project:hover .project-link{
+    bottom: 5rem;
+    transition: bottom .3s .3s;
+}
 
 
 /* end of section 3 */
