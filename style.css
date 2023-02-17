@@ -336,3 +336,50 @@ project:hover .project-img{
 
 
 /* end of section 3 */
+
+/* section 4 */
+.section-4{
+    width: 100%;
+    height: 70vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-4-heading{
+    color: white;
+    box-shadow: none;
+    border-color: orange;
+}
+
+.contact-form{
+    width: 50rem;
+    flex-direction: column;
+
+}
+
+.contact-form input, textarea{
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem 0;
+    background-color: wheat;
+    font-size: 1.5rem;
+    border: .3rem solid olive;
+    color: green;
+}
+
+.contact-form textarea{
+    height: 10rem;
+    max-height: 15rem;
+    max-width: 100%;
+}
+
+.contact-form .contact-form-btn{
+    background-color: olive;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+}
+/* end of section 4 */
